@@ -2,22 +2,42 @@ import React from "react";
 import { NewCard } from "../components";
 import { makeStyles } from "@mui/styles";
 import { Grid } from "@mui/material";
+import { useSelector } from "react-redux";
+import { PathConstant } from "@root/const";
+import Link from "next/link";
 
 const NewBanner = () => {
   const classes = useStyles();
+  const { list } = useSelector((state) => state.app);
 
   return (
     <Grid container spacing={0.25}>
-      <Grid xs={10} item className={classes.mainNew}>
-        <NewCard
-          imageSrc={listNewSpecial[0].src}
-          title={listNewSpecial[0].title}
-        />
+      <Grid
+        xs={10}
+        item
+        className={classes.mainNew}
+        component={Link}
+        href={{
+          pathname: PathConstant.NEW_DETAIL,
+          query: { id: list[0]?.id },
+        }}
+      >
+        <NewCard imageSrc={list[0]?.anhDaiDien} title={list[0]?.tieuDe} />
       </Grid>
       <Grid container item xs={2} spacing={0.25}>
-        {listNewSpecial.map((item, index) => (
-          <Grid key={index} xs={12} item className={classes.new}>
-            <NewCard imageSrc={item.src} title={item.title} />
+        {list.slice(1, 4)?.map((item, index) => (
+          <Grid
+            key={index}
+            xs={12}
+            item
+            className={classes.new}
+            component={Link}
+            href={{
+              pathname: PathConstant.NEW_DETAIL,
+              query: { id: item.id },
+            }}
+          >
+            <NewCard imageSrc={item.anhDaiDien} title={item.tieuDe} />
           </Grid>
         ))}
       </Grid>

@@ -18,7 +18,7 @@ export const getNewListService = (id, skip = 0) => {
       ma_so: "shn",
       ma_phong: "",
       skip,
-      limit: 12,
+      limit: 16,
       tieu_de: "",
       danh_muc_tin_tuc_id: id,
     },

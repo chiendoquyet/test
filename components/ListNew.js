@@ -29,7 +29,7 @@ const ListNew = ({ isMore, handleGetMore }) => {
         spacing={0.25}
         className={clsx("custom-scrollbar", classes.wrapper)}
       >
-        {newList.map((item, index) => (
+        {newList.slice(4)?.map((item, index) => (
           <Grid
             key={index}
             item

@@ -18,7 +18,7 @@ const List = () => {
     if (!id) {
       id = categories[0]?.id;
     }
-    if (pagination.limit === 12) {
+    if (pagination.limit === 16) {
       dispatch(getList(id));
       return;
     }
