@@ -1,0 +1,36 @@
+{
+  "name": "test_tv",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.15",
+    "@mui/styles": "^5.11.13",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "axios": "^1.3.4",
+    "clsx": "^1.2.1",
+    "dayjs": "^1.11.7",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "js-cookie": "^3.0.1",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-redux": "^8.0.5",
+    "redux-saga": "^1.2.3",
+    "sass": "^1.60.0",
+    "typescript": "5.0.3"
+  }
+}
