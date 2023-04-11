@@ -1,5 +1,4 @@
 import { ApiConstant } from "@root/const";
-import Cookies from "js-cookie";
 import axios from "axios";
 
 const Api = axios.create({
@@ -8,7 +7,7 @@ const Api = axios.create({
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
-    Authorization: Cookies.get(ApiConstant.KEY_TOKEN),
+    Authorization: "3EC79C17-63ED-4166-BD58-04397B94312C",
   },
 });
 

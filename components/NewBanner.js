@@ -45,22 +45,6 @@ const NewBanner = () => {
   );
 };
 
-const listNewSpecial = [
-  {
-    title:
-      "The Image Embed element The Image Embed element The Image Embed element",
-    src: "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/14/yvA5SpUH-IMG-Worlds-1200x800.jpg",
-  },
-  {
-    title: "The Image Embed element",
-    src: "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/14/yvA5SpUH-IMG-Worlds-1200x800.jpg",
-  },
-  {
-    title: "The Image Embed element",
-    src: "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/14/yvA5SpUH-IMG-Worlds-1200x800.jpg",
-  },
-];
-
 export default NewBanner;
 export const HEIGHT_PANEL_IN_PX = 480;
 
